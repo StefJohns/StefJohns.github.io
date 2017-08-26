@@ -8,14 +8,18 @@ html{
 #mainPage {
     background-image: url(../img/spaceBack.jpg);
     background-attachment: fixed;
-    color: darkblue;
+    color: mediumpurple;
     margin: 0;
     background-color: black;
 }
 .navbar {
     z-index: 100%;
 }
-
+.navbar-toggler:hover {
+        -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
 /*home*/
 #home {
     padding-top: 100px;
@@ -25,20 +29,37 @@ html{
 }
 #home .jumbotron {
     margin-top: 300px;
-    background: #61236D;
-    color: #BE4DFF;
+    background: transparent;
+    color: white;
 }
+#home .btn {
+    background-color: #BE4DFF;
+    color: white;
+    box-shadow: inset 0px 0px 5px 0px black;
+    border: none;
+}
+#home .btn:hover {
+    
+    opacity: 1;
+    color: #BE4DFF;
+    background-color: transparent;
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
 /*endhome*/
 
 
 
 /*about*/
 #about {
-    min-height: 1060px;
+    padding-top: 120px;
+    min-height: 860px;
     width: auto;
     font-family: 'Ubuntu Condensed', sans-serif;
-    
-    
+    padding-bottom: 100px;  
+    background-color: transparent;
 }
 .jumbotron {
     background: transparent;
@@ -122,12 +143,13 @@ input[type=submit]:hover {
     background-color: transparent;
 }
 #skills{ 
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 120px;
+    min-height: 860px;
     width: 100%;
     font-family: 'Ubuntu Condensed', sans-serif;
-    background-color: #222F5B;
-    color: #8c9edb;
+    background-color: transparent;
+    color: white;
+    padding-bottom: 100px;
 }
 #skills .display-3 {
     text-align: center;
@@ -152,3 +174,24 @@ input[type=submit]:hover {
     display: block;
     background-color: transparent;
 }
+
+
+
+
+
+@keyframes neon2 {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a309a3, 0 0 70px #a309a3, 0 0 80px #a309a3, 0 0 100px #a309a3, 0 0 150px #a309a3;
+  }
+    @-moz-keyframes neon2 {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a309a3, 0 0 70px #a309a3, 0 0 80px #a309a3, 0 0 100px #a309a3, 0 0 150px #a309a3;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #a309a3, 0 0 35px #a309a3, 0 0 40px #a309a3, 0 0 50px #a309a3, 0 0 75px #a309a3;
+  }
+}
+    @-webkit-keyframes neon2 {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a309a3, 0 0 70px #a309a3, 0 0 80px #a309a3, 0 0 100px #a309a3, 0 0 150px #a309a3;
+  }
