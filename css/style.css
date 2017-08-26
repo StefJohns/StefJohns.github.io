@@ -7,6 +7,7 @@ html{
 
 #mainPage {
     background-image: url(../img/spaceBack.jpg);
+    background-attachment: fixed;
     color: darkblue;
     margin: 0;
     background-color: black;
@@ -24,8 +25,8 @@ html{
 }
 #home .jumbotron {
     margin-top: 300px;
-    background: transparent;
-    color: purple;
+    background: #61236D;
+    color: #BE4DFF;
 }
 /*endhome*/
 
@@ -41,7 +42,7 @@ html{
 }
 .jumbotron {
     background: transparent;
-    color:purple;
+    color:#BE4DFF;
 }
 .columnHeader {
     align-content: center:
@@ -104,27 +105,35 @@ input[type=submit]:hover {
 
 .container-contact {
     border-radius: 53px;
-    background-color: darkslategray;
+    background-color: black;
     padding: 20px;
     margin-left:10px;
+    color: #BE4DFF;
+}
+.alert {
+    background-color: blueviolet;
+    color: black;
 }
 
 
 /*skills*/
 .container-s {
     width: 100%; 
-    background-color: black;
+    background-color: transparent;
 }
 #skills{ 
     margin-top: 100px;
     margin-bottom: 100px;
     width: 100%;
     font-family: 'Ubuntu Condensed', sans-serif;
-    background-color: transparent;
-    color: purple;
+    background-color: #222F5B;
+    color: #8c9edb;
+}
+#skills .display-3 {
+    text-align: center;
 }
 .skills {
-    text-align: center; 
+    text-align: right; 
     padding-right: 20px; 
     line-height: 40px;
     color: aliceblue; 
