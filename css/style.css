@@ -3,6 +3,9 @@ html{
     font-family: 'Comfortaa', cursive;
     font-family: 'Ubuntu Condensed', sans-serif;
 }
+body {
+    overflow-x: hidden;
+}
 
 
 #mainPage {
@@ -25,6 +28,7 @@ html{
     padding-top: 100px;
     min-height: 960px;
     width: auto;
+  
     
 }
 #home .jumbotron {
@@ -37,6 +41,8 @@ html{
     color: white;
     box-shadow: inset 0px 0px 5px 0px black;
     border: none;
+    width:40%;
+    margin: 0 auto;
 }
 #home .btn:hover {
     
@@ -61,19 +67,25 @@ html{
     padding-bottom: 100px;  
     background-color: transparent;
 }
-.jumbotron {
+#about .card-holder {
     background: transparent;
+    margin: 0 auto;
     color:#BE4DFF;
+    margin-top: 200px;
+    
 }
-.columnHeader {
+#about .card-title {
     align-content: center:
 }
-.card-title {
+#about .card-text{
+    
+}
+#about .card-title {
     color:black;
     font-family: 'Ubuntu Condensed', sans-serif;
     text-align: center;
 }
-.card-text {
+#about .card-text {
     color:darkblue;
     font-family: 'Comfortaa', cursive;
     text-align: center;
@@ -85,57 +97,56 @@ html{
     text-align: center;
     font-size: 12px
 }
+#about .card-deck {
+    margin:0 auto;
+    width: 80%;
+}
+#about .display-3 {
+ 
+}
+#about .card {
+    padding: 30px;
+    margin: 0 auto;
 
-
+}
 /*contact*/
-
-input[type=text], select, textarea {
+#contact {
+    padding-top: 120px;
+    min-height: 860px;
     width: 100%;
-    padding: 12px;  
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px;
-    margin-bottom: 16px; 
-    resize: vertical;
 }
 
-
-input[type=submit] {
-    background-color: mediumpurple;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
+.card-body .btn{
+    width: 90%;
+    text-align: center;
+   
 }
-
-
-input[type=submit]:hover {
-    box-shadow: 
-		inset 0 0 50px red,      
-        inset 20px 0 80px purple,   
-        inset -20px 0 80px white,  
-        inset 20px 0 300px pink,  
-        inset -20px 0 300px pink, 
-        0 0 50px pink,            
-        -10px 0 80px pink,        
-        10px 0 80px purple;       
-}
-
-
 .container-contact {
-    border-radius: 53px;
-    background-color: black;
-    padding: 20px;
-    margin-left:10px;
+    height; 800px;
+    padding:20px;
+    background-color: rebeccapurple;
     color: #BE4DFF;
-}
-.alert {
-    background-color: blueviolet;
-    color: black;
+    margin: 50px auto;
 }
 
+#contact .card {
+    border-radius: 15px;
+    margin: 20px auto;
+}
+.card-footerFaceBook {
+    height: 100px;
+}
+.card-footerInstagram {
+    height: 100px;
+}
+#contact .card-deck {
+  margin: 0 auto;
+}
+#contact .card-title {
+    color:black;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: center;
+}
 
 /*skills*/
 .container-s {
