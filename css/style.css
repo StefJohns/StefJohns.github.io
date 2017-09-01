@@ -15,11 +15,13 @@ body {
     margin: 0;
     background-color: black;
 }
+
 .navbar {
     z-index: 100%;
-}
+  }
+
 .navbar-toggler:hover {
-        -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
     -moz-animation: neon2 1.5s ease-in-out infinite alternate;
     animation: neon2 1.5s ease-in-out infinite alternate;
 }
@@ -117,7 +119,7 @@ body {
 }
 
 .card-body .btn{
-    width: 90%;
+    width: auto;
     text-align: center;
    
 }
