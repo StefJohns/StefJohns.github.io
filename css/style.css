@@ -5,12 +5,15 @@ html{
 }
 body {
     overflow-x: hidden;
+    background-image: url(../img/backGround.jpg);
+    background-position:bottom;
+    animation: 80s linear 2s infinite bp;
+    display: flex;
+    background-size: cover;
 }
 
 
 #mainPage {
-    background-image: url(../img/spaceBack.jpg);
-    background-attachment: fixed;
     color: mediumpurple;
     margin: 0;
     background-color: black;
@@ -18,25 +21,64 @@ body {
 
 .navbar {
     z-index: 100%;
+    background-color: black;
   }
 
-.navbar-toggler:hover {
-    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-    animation: neon2 1.5s ease-in-out infinite alternate;
+.navbar .btn:hover {
+    -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+    animation: neon3 1.5s ease-in-out infinite alternate;
+    background-color: transparent;
 }
 /*home*/
 #home {
     padding-top: 100px;
-    min-height: 960px;
+    min-height: 990px;
     width: auto;
-  
-    
 }
-#home .jumbotron {
-    margin-top: 300px;
-    background: transparent;
-    color: white;
+.text-animation {
+    list-style: none;
+    position: absolute;
+    font-size: 120px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.text-animation li{
+    display: inline-block;
+    margin-right: 5px;
+    opacity: 1;
+    transition: all 3.5s ease;
+}
+.text-animation li:last-child{
+    margin-right: 0;
+}
+.text-animation.hidden {
+    opacity: 0;
+}
+.text-animation.hidden li:nth-child(1){ /*W*/
+    transform: translateX(-1200px) translateY(1px);
+}
+.text-animation.hidden li:nth-child(2){ /*E*/
+    transform: translateX(-801px) translateY(200px);
+}
+.text-animation.hidden li:nth-child(3){ /*L*/
+    transform: translateX(-401px) translateY(400px);
+}
+.text-animation.hidden li:nth-child(4){ /*C*/
+    transform: translateX(1px) translateY(600px);
+}
+.text-animation.hidden li:nth-child(5){ /*O*/
+    transform: translateX(401px) translateY(-400px);
+}
+.text-animation.hidden li:nth-child(6){ /*M*/
+    transform: translateX(801px) translateY(-200px);
+}
+.text-animation.hidden li:nth-child(7){ /*E*/
+    transform: translateX(1200px) translateY(-1px);
+}
+.lead {
+    margin-top: 500px;
 }
 #home .btn {
     background-color: #BE4DFF;
@@ -181,12 +223,19 @@ body {
 .bs {width: 80%; background-color: purple;}
 
 /*footer*/
-
-.footer {
-    text-align: right;
-    display: block;
-    background-color: transparent;
+.footerContainer {
+    width: 100%;
+    bottom: 0;
+    height: 30px;
 }
+.footer {
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    height: 30px;
+}
+
+
 
 
 
@@ -196,7 +245,8 @@ body {
   from {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a309a3, 0 0 70px #a309a3, 0 0 80px #a309a3, 0 0 100px #a309a3, 0 0 150px #a309a3;
   }
-    @-moz-keyframes neon2 {
+}
+@-moz-keyframes neon2 {
   from {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a309a3, 0 0 70px #a309a3, 0 0 80px #a309a3, 0 0 100px #a309a3, 0 0 150px #a309a3;
   }
@@ -204,7 +254,26 @@ body {
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #a309a3, 0 0 35px #a309a3, 0 0 40px #a309a3, 0 0 50px #a309a3, 0 0 75px #a309a3;
   }
 }
-    @-webkit-keyframes neon2 {
+@-webkit-keyframes neon2 {
   from {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a309a3, 0 0 70px #a309a3, 0 0 80px #a309a3, 0 0 100px #a309a3, 0 0 150px #a309a3;
   }
+}
+@keyframes neon3 {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #46446B, 0 0 70px #46446B, 0 0 80px #46446B, 0 0 100px #46446B, 0 0 150px #46446B;
+  }
+}
+@-moz-keyframes neon3 {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #46446B, 0 0 70px #46446B, 0 0 80px #46446B, 0 0 100px #46446B, 0 0 150px #46446B;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #46446B, 0 0 35px #46446B, 0 0 40px #46446B, 0 0 50px #46446B, 0 0 75px #46446B;
+  }
+}
+@-webkit-keyframes neon3 {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #46446B, 0 0 70px #46446B, 0 0 80px #46446B, 0 0 100px #46446B, 0 0 150px #46446B;
+  }
+}
