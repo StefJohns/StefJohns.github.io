@@ -1,28 +1,31 @@
 html{
-    font-size: 20px;
+    font-size: auto;
     font-family: 'Comfortaa', cursive;
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 body {
     overflow-x: hidden;
     background-image: url(../img/backGround.jpg);
-    background-position:bottom;
-    animation: 80s linear 2s infinite bp;
-    display: flex;
+    background-attachment:fixed;
     background-size: cover;
 }
 
 
 #mainPage {
-    color: mediumpurple;
+    color: white;
     margin: 0;
     background-color: black;
 }
 
 .navbar {
-    z-index: 100%;
+    transform: translateZ(1px) scale(1);
     background-color: black;
+    position: fixed;
   }
+.navbar img {
+    height: 40px;
+    width: 60px;
+}
 
 .navbar .btn:hover {
     -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
@@ -33,16 +36,20 @@ body {
 /*home*/
 #home {
     padding-top: 100px;
-    min-height: 990px;
+    min-height: 900px;
     width: auto;
+    transform: translateZ(0px);
 }
 .text-animation {
     list-style: none;
     position: absolute;
-    font-size: 120px;
+    font-size: 50px;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+.text-animation li{
+    animation: glow 1.5s ease-in infinite alternate;
 }
 .text-animation li{
     display: inline-block;
@@ -79,23 +86,25 @@ body {
 }
 .lead {
     margin-top: 500px;
+    text-shadow: 0 0 10px #fff;
+    color: white;
 }
 #home .btn {
     background-color: #BE4DFF;
     color: white;
-    box-shadow: inset 0px 0px 5px 0px black;
+    box-shadow: inset 0px 0px 10px 0px black;
     border: none;
-    width:40%;
+    width:30%;
     margin: 0 auto;
 }
 #home .btn:hover {
     
     opacity: 1;
     color: #BE4DFF;
-    background-color: transparent;
-    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-    animation: neon2 1.5s ease-in-out infinite alternate;
+    background-color: white;
+    -webkit-animation: neon2 2s ease-in-out infinite alternate;
+    -moz-animation: neon2 2s ease-in-out infinite alternate;
+    animation: neon2 2s ease-in-out infinite alternate;
 }
 
 /*endhome*/
@@ -241,6 +250,7 @@ body {
 
 
 
+
 @keyframes neon2 {
   from {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a309a3, 0 0 70px #a309a3, 0 0 80px #a309a3, 0 0 100px #a309a3, 0 0 150px #a309a3;
@@ -277,3 +287,107 @@ body {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #46446B, 0 0 70px #46446B, 0 0 80px #46446B, 0 0 100px #46446B, 0 0 150px #46446B;
   }
 }
+
+@keyframes glow {
+    to{
+    text-shadow: 0 0 10px #fff; 0 0 20px #a309a3; 0 0 10px #a309a3;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .text-animation {
+        font-size: 3vh;
+        font-weight: 300;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar img {
+        height: 30px;
+        width: 40px;
+    }
+    .lead {
+    margin-top: 100px;
+    text-shadow: 0 0 10px #fff;
+    color: white;
+    }
+    .navbar {
+    font-size: 5px;
+    }
+    #about {
+        padding-top: 20px;
+        min-height: 600px;
+        width: auto;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        padding-bottom: 20px;  
+        background-color: transparent;
+    }
+    #about h1 {
+        transform: translateZ(-2px) scale(1);
+    }
+}
+@media only screen and (max-width: 412px) {
+    .text-animation {
+        font-size: 3vh;
+        font-weight: 300;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar img {
+        height: 20px;
+        width: 30px;
+    }
+    #home {
+        max-height: 640px;
+    }
+    .lead {
+    margin-top: 100px;
+    text-shadow: 0 0 10px #fff;
+    color: white;
+    }
+    .navbar {
+    font-size: 5px;
+    }
+    #about {
+        padding-top: 10px;
+        min-height: 400px;
+        width: auto;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        padding-bottom: 10px;  
+        background-color: transparent;
+    }
+    
+}
+@media only screen and (max-width: 320px) {
+    .text-animation {
+        font-size: 3vw;
+        font-weight: 300;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar img {
+        height: 20px;
+        width: 30px;
+    }
+    .lead {
+    margin-top: 100px;
+    text-shadow: 0 0 10px #fff;
+    color: white;
+    }
+    .navbar {
+        font-size: 3px;
+        height: 7vh;   
+    }
+    .navbar .btn {
+        font-size: 10px;
+    }
+    #home {
+        max-height: 640px;
+    }
+    .lead {
+        margin-top: 100px;
+    }
+}
+
