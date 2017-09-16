@@ -17,9 +17,6 @@ $('a[href^="#"]').on('click', function(event) {
 
 AOS.init();
 
-AOS.init({
-  disable: 'mobile'
-});
 
 $(function () {
     $('[data-toggle="popover"]').popover()
