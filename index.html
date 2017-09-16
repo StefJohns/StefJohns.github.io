@@ -1,222 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="./img/icons/sj.png">
-    <title>Stef Johns</title>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Ubuntu+Condensed" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar sticky-top navbar-dark bg-dark justify-content-center">
-        <form class="form">
-            <a class="btn btn-dark" type="button" href="#home" style="color: white; background-color: rebeccapurple;">Home</a>
-            <a class="btn btn-dark" type="button" href="#about" style="color: white; background-color: rebeccapurple;">About</a>
-            <a class="btn btn-dark" type="button" href="#skills" style="color: white; background-color: rebeccapurple;">Skills</a>
-            <a class="btn btn-dark" type="button" href="#projects" style="color: white; background-color: rebeccapurple;">Projects</a>
-            <a class="btn" type="button" href="#contact" style="color: white; background-color: rebeccapurple;">Contact</a>
-        </form>
-    </nav>
-    <header id="home" class="clearfix">
-        <div class="container-fluid text-center">
-            <h1>Welcome</h1>
+<body id="mainPage">
+    <div class="mainContent">
+    <!--NAV-->
+    
+        <nav class="navbar navbar-dark fixed-top">
+            <a class="navbar-brand">
+                <img src="img/icons/sj.png" alt="SJ">
+            </a>
+                <form class="form-block">
+                    <a class="btn btn-dark" href="#home">home</a>
+                    <a class="btn btn-dark" href="#about">about</a>
+                    <a class="btn btn-dark" href="#skills">skills</a>
+                    <a class="btn btn-dark" href="#contact">contact</a>
+                </form>
+        </nav>
+
+    <!--/NAV-->
+    <!--HOME-->
+    <section id="home">
+        <div class="container text-center">
+            <ul class="text-animation hidden">
+                <li>W</li>
+                <li>E</li>
+                <li>L</li>
+                <li>C</li>
+                <li>O</li>
+                <li>M</li>
+                <li>E</li>
+            </ul>
             <p class="lead">Front-End Web Developer proficient in web building and design.</p>
             <a class="btn btn-dark" href="#about">Enter</a>
         
         </div>
-    </header>
-    
-    <section id="about" class="clearfix">
-        <div class="jumbotron" data-aos="fade-up-right" data-aos-anchor="#about" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-            <h1 class="display-3" data-aos="zoom-in-down" data-aos-anchor=".jumbotron"  data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">About Me</h1>
-            <div class="card-deck" data-aos="zoom-in" data-aos-anchor=".display-3" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-            <div id="location" class="card" data-aos="fade-up" data-aos-anchor=".card-deck" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-                <div class="card-header border border-dark rounded">
-                    <h3><img src="./img/icons/location.png" alt="location">Location</h3>
-                </div>
-                <p class="card-body border rounded"><br>I currently live in Portland, Oregon. It's a great city with many different places to eat, a lively tech community, and a great view of the mountains.</p>
-                <iframe  height="480" src="https://www.youtube.com/embed/0fMJ_JwGc_g" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div id="mission" class="card" data-aos="fade-up" data-aos-anchor=".card-deck" data-aos-duration="1500" data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-                <div class="card-header border border-dark rounded">
-                    <h3><img src="./img/icons/mission.png" alt="Mission Statement">Mission Statement</h3>
-                </div>
-                <p class="card-body border rounded">My goal as a computer programmer changes as technology changes. However, one of the steadfast goals I have set for myself, is to write and create legible and understandable code, that not only flows and reads well, but accomplishes tasks beyond expection. With an eye to the future, I design for and around the individual.</p>
-            </div>
-            <div id="git" class="card" data-aos="fade-up" data-aos-anchor=".card-deck" data-aos-duration="1500" data-aos-delay="700" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-                <div class="card-header border border-dark rounded">
-                    <h3><img src="./img/icons/github.png" alt="GitHub">GitHub</h3>
-                </div>
-                <p class="card-body border rounded">Here is a link to my GitHub Profile. Here you can see the projects I'm working or collaborating on. You can also work on some code with me! Just request to pull something.</p>
-                <p class="card-footer border rounded">
-                <a class="btn btn-dark btn-lg" href="https://github.com/StefJohns" role="button" target="_blank">GitHub</a>
-                </p>
-            </div>
-            <div id="linkedIn" class="card" data-aos="fade-up" data-aos-anchor=".card-deck" data-aos-duration="1500" data-aos-delay="900" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-                <div class="card-header border border-dark rounded">
-                    <h3><img src="./img/icons/linkedin.png" alt="LinkedIn">LinkedIn</h3>
-                </div>
-                <p class="card-body border rounded">My LinkedIn profile is available for viewing. Add me to expand our networks! </p>
-                <p class="card-footer border rounded">
-                <a class="btn btn-dark btn-lg" href="https://www.linkedin.com/in/stefon-johns/" role="button" target="_blank">LinkedIn</a>
-                </p>
-            </div>
-        </div>
-    </div>
     </section>
+    <!--/HOME-->
     
-    <section id="skills" class="clearfix">
-        <div id= "skillsJumbotron" class="jumbotron" data-aos="zoom-out-up" data-aos-anchor="#skills" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-            <h1 id="skillsDisplay" class="display-3" data-aos="fade-right" data-aos-anchor="#skillsJumbotron"  data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">Skills</h1>
-            <div id="skillsCardDeck" class="card-deck" data-aos="zoom-in" data-aos-anchor="skillsDisplay" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-                <div id="languages" class="card" data-aos="flip-left" data-aos-anchor="#skillsCardDeck" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out" data-aos-delay="800">
-                    <div class="card-header">
-                        <h3>Languages</h3>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text border rounded clearfix">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item list-group-item-action list-group-item-secondary"><img src="./img/icons/bootStrap.png"> BootStrap</li>
-                                <li class="list-group-item list-group-item-action list-group-item-secondary"><img src="./img/icons/css.png"> CSS 3</li>
-                                <li class="list-group-item list-group-item-action list-group-item-secondary"><img src="./img/icons/html.png"> HTML 5</li>
-                                <li class="list-group-item list-group-item-action list-group-item-secondary"><img src="./img/icons/jq.png"> jQuery</li>
-                                <li class="list-group-item list-group-item-action list-group-item-secondary"><img src="./img/icons/js.png"> JavaScript</li>
-                                <li class="list-group-item list-group-item-action list-group-item-secondary"><img src="./img/icons/php.png"> PHP</li>
-                                <li class="list-group-item list-group-item-action list-group-item-secondary"><img src="./img/icons/sql.png"> SQL</li>
-                                <li class="list-group-item list-group-item-action list-group-item-secondary"><img src="./img/icons/cSharp.png"> C#</li>
-                            </ul>
-                        </div>
-                    </div>
+    <!--ABOUT-->
+    <section id="about">
+        <div class="card-holder container-fluid">
+            <h1 class="display-3 text-center">About</h1>
+            <div class="card-deck">
+                <div class="card border-dark">
+                    <h3 class="card-title"><img src="./img/icons/location.png">Location</h3>
+                    <br/>
+                    <p class="card-text text-center">I currently live in Portland, Oregon. It's a great city with many different places to eat, a lively tech community, and a great view of the mountains.</p>
                 </div>
-                <div id="programs" class="card" data-aos="fade-up" data-aos-anchor="#skillsCardDeck" data-aos-duration="2500" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out" data-aos-delay="1400">
-                    <div class="card-header">
-                        <h3>Programs and Software</h3>
-                    </div>
-                    <div id="carouselPrograms" class="carousel slide card-body" data-ride="carousel">
-                        <div class="carousel-inner card-text border rounded">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="./img/programs/visualStudio.png" alt="First slide">
-                                <div class="carousel-caption d-none d-md-block hidden">
-                                    <h3>Visual Studio</h3>
-                                    <p>Using Visual Studio, one can create web applications, databases, desktop applications, and pretty much anything else you could want to accomplish in an IDE.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./img/icons/brackets.png" alt="Second slide">
-                                <div class="carousel-caption d-none d-md-block hidden">
-                                    <h3>Brackets Editor</h3>
-                                    <p>Utilizing Brackets I am able to work in a similar way to working with Visual Studio where in it is an IDE.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./img/icons/microsoftOfficeSuite.jpg" alt="Third slide">
-                                <div class="carousel-caption d-none d-md-block hidden">
-                                    <h3>Microsoft Office Suite</h3>
-                                    <p>Whether it is a PowerPoint presentation or a word document, I've gained a lot of experience in the Microsoft Office Suite, through several iterations</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./img/programs/gimp.png" alt="Fourth slide">
-                                <div class="carousel-caption d-none d-md-block hidden">
-                                    <h3>GIMP</h3>
-                                    <p>A photo editing software much like Adobe Photoshop but offered for free through their website.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./img/programs/gitBash.png" alt="Fifth slide">
-                                <div class="carousel-caption d-none d-md-block hidden">
-                                    <h3>Git Bash</h3>
-                                    <p>This is the command line version of Git. There is no GUI, other than a Console window.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./img/programs/githubDesktop.png" alt="Sixth slide">
-                                <div class="carousel-caption d-none d-md-block hidden">
-                                    <h3>GitHub Desktop</h3>
-                                    <p>A great desktop application to manage git repositories online that you can branch, pull, push, and request similar to what you would do on the website or via the command line in Git Bash.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./img/programs/notepadPlusPlus.png" alt="Seventh slide">
-                                <div class="carousel-caption d-none d-md-block hidden">
-                                    <h3>Notepad++</h3>
-                                    <p>This is a great, bare minimum text editor. There are no IDE functions or capabilities. Just simple. A keen eye is necessary when using this program.</p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
+                <div class="card border-dark">
+                    <h3 class="card-title"><img src="./img/icons/mission.png">Mission Statement</h3>
+                    <br/>
+                    <p class="card-text text-center">My goal as a computer programmer varies often. However, one of the goals I have set for myself, is to write and create beautiful code, that not only flows and reads well, but accomplishes tasks beyond expection. With an eye to the future, I design for and around the individual.</p>
                 </div>
-                <div id="work" class="card" data-aos="flip-right" data-aos-anchor="#skillsCardDeck" data-aos-duration="3000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out" data-aos-delay="1700">
-                    <div class="card-header">
-                        <h3>Work History</h3>
+                    <div class="card border-dark">
+                        <h3 class="card-title"><img src="./img/icons/github.png"></h3>
+                          <p class="card-text">Here is a link to my GitHub Profile.</p>
+                          <p class="cardSub-text"> <small>*here is where I work on small projects and collaborations.</small></p>
+                        <br/>
+                        <a href="https://github.com/StefJohns" class="btn btn-outline-dark" target="_blank">Profile</a>
                     </div>
-                    <div class="card-body">
-                        <div class="card-text border rounded">
-                            <p>I am still new to the field of software development. However, I do have a lot of experience in sales, customer service, and technical support. I look forward to furthering my career and adding more to this section. For now, have a look at my current resume.</p>
-                             <a class="btn btn-lg btn-dark" href="https://drive.google.com/open?id=1Xf92x5U76EyFMz6K5zLjvRLaqf0gS623yURjEUTUDTQ" role="button" target="_blank">Sales / Cus.Serv. Resume</a>
-                        </div>
+                    <div class="card border-dark">
+                        <h3 class="card-title"><img src="./img/icons/linkedin.png"></h3>
+                          <p class="card-text">Here is a link to my LinkedIn Profile</p>
+                          <p class="cardSub-text"> <small>*profile contains development history. Please contact for work history.</small></p>
+                        <a href="https://www.linkedin.com/in/stefon-johns/" class="btn btn-outline-dark" target="_blank">Profile</a>
                     </div>
                 </div>
             </div>
+        
+    </section>
+    <!--/ABOUT-->
+    
+    <!--SKILLS-->
+    <section id="skills">
+        <h3 class="display-3">Skills</h3>
+        <div class="container-progress">
+            <p><img src="./img/icons/html5.png">HTML</p>
+            <div class="container-s">
+                <div class="skills html">100%</div>
+            </div>
+
+            <p><img src="./img/icons/css3.png">CSS</p>
+            <div class="container-s">
+              <div class="skills css">100%</div>
+            </div>
+
+            <p><img src="./img/icons/javascript.png">JavaScript</p>
+            <div class="container-s">
+              <div class="skills js">55%</div>
+            </div>
+            
+            <p><img src="./img/icons/bootStrap.png">Bootstrap</p>
+            <div class="container-s">
+              <div class="skills bs">80%</div>
+            </div>
+            
+            <p><img src="./img/icons/php.png">PHP</p>
+            <div class="container-s">
+              <div class="skills php">0%</div>
+            </div>
+            <p>*as skills are learned, they will be added to this page.</p>
         </div>
     </section>
+    <!--/SKILLS-->
     
-    <section id="projects" class="clearfix">
-        <div id="projectsJumbotron" class="jumbotron" data-aos="flip-up" data-aos-anchor="#projects" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-            <br/>
-            <h1 class="display-3" data-aos="flip-down" data-aos-anchor="#projectsJumbotron" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">Projects and Code</h1>
-            <p class="lead" data-aos="flip-down" data-aos-anchor="#projectsJumbotron" data-aos-delay="1100" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">This section is still under construction right now. If you would like to see some completed projects and code, check out my GitHub profile (link in about me) and look through The Tech Academy Projects.</p>
-            <hr class="my-4">
-            <p data-aos="flip-down" data-aos-anchor="#projectsJumbotron" data-aos-delay="1700" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">This section will be updated periodically as projects are worked on and completed. Thank you for your patience.</p>
-        </div>
-    </section>
-    
-    <section id="contact" class="clearfix">
-        <div id="contactJumbotron" class="jumbotron text-center" data-aos="flip-down" data-aos-anchor="#contact" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-            <h3 id="contactDisplay" class="display-3" data-aos="fade-left" data-aos-anchor="#contactJumbotron"  data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">Contact</h3>  
-            <div id="contactCardDeck" class="card-deck" data-aos="zoom-in" data-aos-anchor="#contactDisplay" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-                <div class="card rounded" class="card" data-aos="flip-up" data-aos-anchor="#contactCardDeck" data-aos-delay="500" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-                  <div class="card-header"><img src="img/icons/gmail.png"></div>
-                  <div class="card-body">
+    <!--CONTACT-->
+    <section id="contact">
+        <h3 class="display-3 text-center">Contact</h3>
+        
+        <div class="container-contact">
+            <div class="card-deck">
+                <div class="card border-dark bg-dark mb-3" style="max-width: 20rem;">
+                  <div class="card-header bg-transparent border-dark"style="text-align: center;"><img src="img/icons/gmail.png"></div>
+                  <div class="card-body text-dark" style="text-align: center;">
                     <h4 class="card-title">Professional</h4>
-                    <button type="button" class="btn btn-dark card-text" data-toggle="modal" data-target="#emailModal1">stefonjohns2@gmail.com</button>
+                    <button type="button" class="btn btn-light card-text" data-toggle="modal" data-target="#emailModal1">stefonjohns2@gmail.com</button>
                       <h4 class="card-title">Personal</h4>
-                    <button type="button" class="btn btn-dark card-text" data-toggle="modal" data-target="#emailModal2">stefonzie900@gmail.com</button>
+                    <button type="button" class="btn btn-light card-text" data-toggle="modal" data-target="#emailModal2">stefonzie900@gmail.com</button>
                   </div>
-                  <div class="card-footer">*please keep emails professional and concise*</div>
+                  <div class="card-footer bg-transparent border-dark"style="text-align:center;font-size: 10px;">*please keep emails professional and concise*</div>
                 </div>
-                <div class="card rounded" class="card" data-aos="flip-down" data-aos-anchor="#contactCardDeck" data-aos-delay="700" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-                  <div class="card-header"><img src="img/icons/cellphone.png"><img src="img/icons/google.png"></div>
-                  <div class="card-body">
+                <div class="card border-dark bg-dark mb-3" style="max-width: 20rem;">
+                  <div class="card-header bg-transparent border-dark"style="text-align: center;"><img src="img/icons/cellphone.png"><img src="img/icons/google.png"></div>
+                  <div class="card-body text-dark" style="text-align: center;">
                     <h4 class="card-title">Google Voice/Hangouts</h4>
-                    <button class="btn btn-dark card-text" data-toggle="popover" title="Google Voice" data-content="This is a VoIP line. You can still leave a voicemail." data-placement="right">(919) 429-9125</button>
+                    <button class="btn btn-light card-text" data-toggle="popover" title="Google Voice" data-content="This is a VoIP line. You can still leave a voicemail." data-placement="right">(919) 429-9125</button>
                       <h4 class="card-title">Personal</h4>
-                    <button class="btn btn-dark card-text">(971) 202-6921</button>
+                    <button class="btn btn-light card-text">(971) 202-6921</button>
                   </div>
-                  <div class="card-footer">*no calls are recorded or monitored, but please leave concise voicemails and messages. Thank you!*</div>
+                  <div class="card-footer bg-transparent border-dark"style="text-align:center;font-size: 10px;">*no calls are recorded or monitored, but please leave concise voicemails and messages. Thank you!*</div>
                 </div>
-                <div class="card rounded" class="card" data-aos="flip-up" data-aos-anchor="#contactCardDeck" data-aos-delay="900" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-                  <div class="card-header"><img src="./img/icons/facebook.png"></div>
-                  <div class="card-body">
+                <div class="card border-dark bg-dark mb-3" style="max-width: 20rem;">
+                  <div class="card-header bg-transparent border-dark"style="text-align: center;"><img src="./img/icons/facebook.png"></div>
+                  <div class="card-body text-dark" style="text-align: center;">
                     <h4 class="card-title">Facebook</h4>
-                    <button class="btn btn-dark card-text"><a href="https://www.facebook.com/StefTheRed" target="_blank">Stefon (Stef) Johns</a></button>
+                    <button class="btn btn-light card-text"><a href="https://www.facebook.com/StefTheRed" target="_blank">Stefon (Stef) Johns</a></button>
                   </div>
-                    <div class="card-footer">*note that this is my personal facebook, views and opinions expressed are personal and therefore my page is not public. If you would like to get to knw me personally, add me and let's talk!*</div>
+                    <div class="card-footerFaceBook bg-transparent border-dark"style="text-align:center;font-size: 10px;">*note that this is my personal facebook, views and opinions expressed are personal and therefor my page is not public. If you would like to get to knw me personally, add me and let's talk!*</div>
                 </div>
-                <div class="card rounded" class="card" data-aos="flip-down" data-aos-anchor="#contactCardDeck" data-aos-delay="1100" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-ease="ease-in-out">
-                  <div class="card-header"><img src="./img/icons/instagram.png"></div>
-                  <div class="card-body">
+                <div class="card border-dark bg-dark mb-3" style="max-width: 20rem;">
+                  <div class="card-header bg-transparent border-dark"style="text-align: center;"><img src="./img/icons/instagram.png"></div>
+                  <div class="card-body text-dark" style="text-align: center;">
                     <h4 class="card-title">Instagram</h4>
-                    <button class="btn btn-dark card-text"><a href="https://www.instagram.com/stefawnjawnz" target="_blank">@stefawnjawnz</a></button>
+                    <button class="btn btn-light card-text"><a href="https://www.instagram.com/stefawnjawnz" target="_blank">@stefawnjawnz</a></button>
                   </div>
-                    <div class="card-footer">*note that this is my personal Instagram, any images you may want to see are within a private profile. You must be an aquaintance to see photos.*</div>
+                    <div class="card-footerInstagram bg-transparent border-dark"style="text-align:center;font-size: 10px;">*note that this is my personal Instagram, any images you may want to see are within a private profile. You must be an aquaintance to see photos.*</div>
                 </div>
             </div>
         </div>
     </section>
-     <!-- Modal -->
+        
+        <!-- Modal -->
         <div class="modal fade" id="emailModal1" tabindex="-1" role="dialog" aria-labelledby="emailModal" aria-hidden="true" style="color: black;">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -255,16 +195,40 @@
             </div>
           </div>
         </div>
-   
-        <div id="footer">
-            <p><a href="https://icons8.com"><img src="./img/icons/icons8.png" style="height: 20px; width: 20px;"><small>icons8</small></a>// https://stefjohns.github.io&copy; 2017 </p> 
+
+    <!--/CONTACT-->
+    
+    <!--FOOTER-->
+    <div class="footerContainer container-fluid">
+        <div class="footer">
+           <p><a href="https://icons8.com"><img src="./img/icons/icons8.png" style="height: 30px; width: 30px;"><small>icons8</small></a>//
+            stefjohns.github.io&copy; 2017 </p> 
         </div>
-<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script><script src="js/src/uncompressed/TimelineMax.js"></script>
+    </div>
+    <!--/FOOTER-->
+    </div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script><script src="js/src/uncompressed/TimelineMax.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-<script src="./js/javascript.js"></script>
+<script src="js/src/uncompressed/TimelineMax.js"></script>
+<script src="./js/JavaScript.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+                })
+        $(function() {
+            setTimeout(function() {
+                $('.text-animation').removeClass('hidden');
+            }, 100);
+        });
+    </script>
+    
+    
 </body>
+
 </html>
