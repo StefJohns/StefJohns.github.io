@@ -23,4 +23,4 @@ AOS.init({
 
 $(function () {
     $('[data-toggle="popover"]').popover()
-        })
+        });
