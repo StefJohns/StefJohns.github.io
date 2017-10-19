@@ -3,232 +3,239 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <title>SJ: Developer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Ubuntu+Condensed" rel="stylesheet">
-</head>
-<body id="mainPage">
-    <div class="mainContent">
-    <!--NAV-->
-    
-        <nav class="navbar navbar-dark fixed-top">
-            <a class="navbar-brand">
-                <img src="img/icons/sj.png" alt="SJ">
-            </a>
-                <form class="form-block">
-                    <a class="btn btn-dark" href="#home">home</a>
-                    <a class="btn btn-dark" href="#about">about</a>
-                    <a class="btn btn-dark" href="#skills">skills</a>
-                    <a class="btn btn-dark" href="#contact">contact</a>
-                </form>
-        </nav>
-
-    <!--/NAV-->
-    <!--HOME-->
-    <section id="home">
-        <div class="container text-center">
-            <ul class="text-animation hidden">
-                <li>W</li>
-                <li>E</li>
-                <li>L</li>
-                <li>C</li>
-                <li>O</li>
-                <li>M</li>
-                <li>E</li>
-            </ul>
-            <p class="lead">Front-End Web Developer proficient in web building and design.</p>
-            <a class="btn btn-dark" href="#about">Enter</a>
-        
-        </div>
-    </section>
-    <!--/HOME-->
-    
-    <!--ABOUT-->
-    <section id="about">
-        <div class="card-holder container-fluid">
-            <h1 class="display-3 text-center">About</h1>
-            <div class="card-deck">
-                <div class="card border-dark">
-                    <h3 class="card-title"><img src="./img/icons/location.png">Location</h3>
-                    <br/>
-                    <p class="card-text text-center">I currently live in Portland, Oregon. It's a great city with many different places to eat, a lively tech community, and a great view of the mountains.</p>
-                </div>
-                <div class="card border-dark">
-                    <h3 class="card-title"><img src="./img/icons/mission.png">Mission Statement</h3>
-                    <br/>
-                    <p class="card-text text-center">My goal as a computer programmer varies often. However, one of the goals I have set for myself, is to write and create beautiful code, that not only flows and reads well, but accomplishes tasks beyond expection. With an eye to the future, I design for and around the individual.</p>
-                </div>
-                    <div class="card border-dark">
-                        <h3 class="card-title"><img src="./img/icons/github.png"></h3>
-                          <p class="card-text">Here is a link to my GitHub Profile.</p>
-                          <p class="cardSub-text"> <small>*here is where I work on small projects and collaborations.</small></p>
-                        <br/>
-                        <a href="https://github.com/StefJohns" class="btn btn-outline-dark" target="_blank">Profile</a>
-                    </div>
-                    <div class="card border-dark">
-                        <h3 class="card-title"><img src="./img/icons/linkedin.png"></h3>
-                          <p class="card-text">Here is a link to my LinkedIn Profile</p>
-                          <p class="cardSub-text"> <small>*profile contains development history. Please contact for work history.</small></p>
-                        <a href="https://www.linkedin.com/in/stefon-johns/" class="btn btn-outline-dark" target="_blank">Profile</a>
-                    </div>
-                </div>
-            </div>
-        
-    </section>
-    <!--/ABOUT-->
-    
-    <!--SKILLS-->
-    <section id="skills">
-        <h3 class="display-3">Skills</h3>
-        <div class="container-progress">
-            <p><img src="./img/icons/html5.png">HTML</p>
-            <div class="container-s">
-                <div class="skills html">100%</div>
-            </div>
-
-            <p><img src="./img/icons/css3.png">CSS</p>
-            <div class="container-s">
-              <div class="skills css">100%</div>
-            </div>
-
-            <p><img src="./img/icons/javascript.png">JavaScript</p>
-            <div class="container-s">
-              <div class="skills js">55%</div>
-            </div>
-            
-            <p><img src="./img/icons/bootStrap.png">Bootstrap</p>
-            <div class="container-s">
-              <div class="skills bs">80%</div>
-            </div>
-            
-            <p><img src="./img/icons/php.png">PHP</p>
-            <div class="container-s">
-              <div class="skills php">0%</div>
-            </div>
-            <p>*as skills are learned, they will be added to this page.</p>
-        </div>
-    </section>
-    <!--/SKILLS-->
-    
-    <!--CONTACT-->
-    <section id="contact">
-        <h3 class="display-3 text-center">Contact</h3>
-        
-        <div class="container-contact">
-            <div class="card-deck">
-                <div class="card border-dark bg-dark mb-3" style="max-width: 20rem;">
-                  <div class="card-header bg-transparent border-dark"style="text-align: center;"><img src="img/icons/gmail.png"></div>
-                  <div class="card-body text-dark" style="text-align: center;">
-                    <h4 class="card-title">Professional</h4>
-                    <button type="button" class="btn btn-light card-text" data-toggle="modal" data-target="#emailModal1">stefonjohns2@gmail.com</button>
-                      <h4 class="card-title">Personal</h4>
-                    <button type="button" class="btn btn-light card-text" data-toggle="modal" data-target="#emailModal2">stefonzie900@gmail.com</button>
-                  </div>
-                  <div class="card-footer bg-transparent border-dark"style="text-align:center;font-size: 10px;">*please keep emails professional and concise*</div>
-                </div>
-                <div class="card border-dark bg-dark mb-3" style="max-width: 20rem;">
-                  <div class="card-header bg-transparent border-dark"style="text-align: center;"><img src="img/icons/cellphone.png"><img src="img/icons/google.png"></div>
-                  <div class="card-body text-dark" style="text-align: center;">
-                    <h4 class="card-title">Google Voice/Hangouts</h4>
-                    <button class="btn btn-light card-text" data-toggle="popover" title="Google Voice" data-content="This is a VoIP line. You can still leave a voicemail." data-placement="right">(919) 429-9125</button>
-                      <h4 class="card-title">Personal</h4>
-                    <button class="btn btn-light card-text">(971) 202-6921</button>
-                  </div>
-                  <div class="card-footer bg-transparent border-dark"style="text-align:center;font-size: 10px;">*no calls are recorded or monitored, but please leave concise voicemails and messages. Thank you!*</div>
-                </div>
-                <div class="card border-dark bg-dark mb-3" style="max-width: 20rem;">
-                  <div class="card-header bg-transparent border-dark"style="text-align: center;"><img src="./img/icons/facebook.png"></div>
-                  <div class="card-body text-dark" style="text-align: center;">
-                    <h4 class="card-title">Facebook</h4>
-                    <button class="btn btn-light card-text"><a href="https://www.facebook.com/StefTheRed" target="_blank">Stefon (Stef) Johns</a></button>
-                  </div>
-                    <div class="card-footerFaceBook bg-transparent border-dark"style="text-align:center;font-size: 10px;">*note that this is my personal facebook, views and opinions expressed are personal and therefor my page is not public. If you would like to get to knw me personally, add me and let's talk!*</div>
-                </div>
-                <div class="card border-dark bg-dark mb-3" style="max-width: 20rem;">
-                  <div class="card-header bg-transparent border-dark"style="text-align: center;"><img src="./img/icons/instagram.png"></div>
-                  <div class="card-body text-dark" style="text-align: center;">
-                    <h4 class="card-title">Instagram</h4>
-                    <button class="btn btn-light card-text"><a href="https://www.instagram.com/stefawnjawnz" target="_blank">@stefawnjawnz</a></button>
-                  </div>
-                    <div class="card-footerInstagram bg-transparent border-dark"style="text-align:center;font-size: 10px;">*note that this is my personal Instagram, any images you may want to see are within a private profile. You must be an aquaintance to see photos.*</div>
-                </div>
-            </div>
-        </div>
-    </section>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="emailModal1" tabindex="-1" role="dialog" aria-labelledby="emailModal" aria-hidden="true" style="color: black;">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id=emailModalLabel1>Open Email Client?</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                This will open your device's default email client. If you do not have one set up, press cancel, and type the email address in your preferred email client.
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-dark"><a href="mailto:stefonjohns2@gmail.com">Continue</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="emailModal2" tabindex="-1" role="dialog" aria-labelledby="emailModal" aria-hidden="true" style="color: black;">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="emailModalLabel2">Open Email Client?</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                This will open your device's default email client. If you do not have one set up, press cancel, and type the email address in your preferred email client.
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-dark"><a href="mailto:stefonzie900@gmail.com">Continue</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    <!--/CONTACT-->
-    
-    <!--FOOTER-->
-    <div class="footerContainer container-fluid">
-        <div class="footer">
-           <p><a href="https://icons8.com"><img src="./img/icons/icons8.png" style="height: 30px; width: 30px;"><small>icons8</small></a>//
-            stefjohns.github.io&copy; 2017 </p> 
-        </div>
-    </div>
-    <!--/FOOTER-->
-    </div>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script><script src="js/src/uncompressed/TimelineMax.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-<script src="js/src/uncompressed/TimelineMax.js"></script>
-<script src="./js/JavaScript.js"></script>
     <script>
-        $(function () {
-            $('[data-toggle="popover"]').popover()
-                })
-        $(function() {
-            setTimeout(function() {
-                $('.text-animation').removeClass('hidden');
-            }, 100);
-        });
+        window.sr = ScrollReveal();
     </script>
+</head>
+<body>
+    <!--NavBar-->
+    <div id="navbarLinks" class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: #000;">
+        <a class="navbar-brand" href="#home"><img src="./img/businessman.png"/><strong>Stefon</strong> Johns</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#resumePage">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-danger dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://github.com/StefJohns/Tech-Academy-Projects/blob/master/Database%20and%20SQL%20Final/Page37.sql" target="_blank">Library Database (MS SQL SERVER)</a>
+                        <a class="dropdown-item" href="https://github.com/StefJohns/Tech-Academy-Projects/blob/master/Photo%20Gallery/index.html" target="_blank">Photo Gallery (HTML/CSS)</a>
+                        <a class="dropdown-item" href="https://github.com/StefJohns/Tech-Academy-Projects/tree/master/Visual%20Studio%20Projects/PizzaSPAFinal" target="_blank">Build A Pizza S.P.A (ASP.NET MVC)</a>
+                        <a class="dropdown-item" href="#" target="_blank">Tech Academy LMS Blog</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     
+    <!--Home-->
+    <div id="home">
+        <div class="container-fluid">
+        <h1 id="homeHeader">Greetings!</h1>
+        <h3 id="homeText">I'm Stefon Johns, a Full-Stack Software Engineer,<br /> who likes to design with the client and user in mind.</h3>
+        <button type="button" href="#about" id="homeButton" style="margin-left: 120px;">Proceed...</button>
+        </div>
+    </div>
     
+    <!--Body of Page-->
+    <div class="container-fluid" id="pageContent">
+        
+        <!--About-->
+    <div id="about">
+        <div id="aboutCont" class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" style="font-size: 1.6em; border-right-style: dotted; border-right-color: white; border-right-width: 2px;">
+                    <h3 id="atWork">At Work</h3>
+                    <hr id="horRule" />
+                    <p id="wp1">I am a graduate of <strong style="color: white;">The Tech Academy</strong> in Portland, Oregon specializing in Full-Stack software development. I have had the opportunity to internship here as well, which has allowed me to work on the school's blog.</p>
+                    <p id="wp2">As a Software Engineer, I enjoy working on front-end and back-end development, and I would lke to eventually flow into Artificial Intelligence and Machine Learning. I specialize in <strong style="color: white;">Database C.R.U.D.</strong> methodology, <strong style="color: white;">User Interface and Design</strong>, and <strong style="color: white;">Client-Side</strong> scripting.</p>
+                </div>
+                <div class="col-md-6" style="text-align: left; color: red; font-size: 1.6em;">
+                    <h3 id="atHome">At Home</h3>
+                    <hr id="horRule2" />
+                    <p id="hp1">I am a <strong style="color: #ff0000;">HUGE</strong> gamer! My favorite game of all time would have to be <strong style="color: #019D0A;">The Legend of Zelda: Ocarina of Time Master Quest</strong>. I went to <strong style="color: #ff0000;">The Art Intstitute of Portland</strong> for Game Design, but found that I wanted to do more coding instead.</p>
+                    <p id="hp2">I throughly enjoy hiking. My favorite place to hike up to is <strong style="color: #ff0000;">Weisendanger Falls</strong>, above Multnomah Falls, here in the Willamette Valley.</p>
+                    <p id="hp3">As cliche as it may be, in my off time I actually enjoy coding. I love learning and being able to learn new languages and frameworks and tools is exciting.</p>
+                </div>
+        </div>
+    </div>
+    </div>
+    
+    <!--Resume-->
+    <div id="resumePage">
+        <div class="container-fluid" id="resumeCont">
+            <div class="row">
+                <h3 style="color:#FF0000;">Skills</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 style="color:#FF0000;">Languages</h6>
+                    <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript(ES6)</li>
+                        <li>C#</li>
+                        <li>ASP.NET</li>
+                        <li>SQL</li>
+                    </ol>
+                </div>
+                <div class="col-md-4">
+                    <h6 style="color:#FF0000;">Frameworks</h6>
+                    <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;">
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                        <li>KnockoutJS</li>
+                        <li>ReactJS</li>
+                        <li>Entitity Framework</li>
+                        <li>.NET Framework</li>
+                    </ol>
+                </div>
+                <div class="col-md-4">
+                    <h6 style="color:#FF0000;">Tools and Programs</h6>
+                    <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;">
+                        <li>NotePad++</li>
+                        <li>Brackets Editor</li>
+                        <li>MS SQL Server 2015</li>
+                        <li>Visual Studio</li>
+                        <li>GIMP</li>
+                        <li>AutoDesk 3DS Max</li>
+                        <li>SolidWorks 2008</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <hr />
+            
+            <div class="row">
+                <h3 style="color:#F0CF02;">Experience</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 style="color:#F0CF02;">Software and Web Development</h6>
+                    <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;font-family: 'Ubuntu Condensed', sans-serif;">
+                        <li><strong>ProsperIT Consulting</strong> | <br />Full Stack Software Developer Intern <br />Aug 2017 - Oct 2017</li>
+                        <li style="font-size: 12px;">Boot-Camp style career school for Software Development with 40-hour week training.
+                            Graduated 2 months before expected date of December 25, 2017. In this self-paced
+                            environment I’ve learned the Fundamentals of Computer Science, HTML/CSS, JavaScript,
+                            C#, ASP.NET, OOP, RDB and Management. Completed projects that are located on
+                            GitHub, including work on a LMS Blog, both front-end and back-end</li>
+                    </ol>
+                </div>
+                <div class="col-md-4">
+                    <h6 style="color:#F0CF02;">Customer Service</h6>
+                    <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;font-family: 'Ubuntu Condensed', sans-serif;">
+                        <li><strong>Conduent</strong> | <br/>Technical Support & Customer Retention <br/>Feb 2017 - Aug 2017</li>
+                        <li><strong>WithMe Retail Holdings LLC</strong> |<br/> Visual Assitant Manager <br/>Nov 2016 - Jan 2017</li>
+                        <li><strong>JBC Product Management</strong> | <br />Customer Service Representative <br />Sep 2016 - Nov 2016</li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div class="col-md-4">
+                    <h6 style="color:#F0CF02;">Resume</h6>
+                    <div class="row">
+                        <a href="resume/Stefon%20Johns%20Resume.doc.pdf" download="StefonJohns_Resume"><img src="img/resume.png" style="width:115px;height:115px;" data-toggle="tooltip" data-placement="right" title="Click here to download my resume!"/></a>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <a href="./resume/index.html" target="_blank"><img src="./img/webResume.png" style="width:115px;height:115px; margin-left: 10px;" data-toggle="tooltip" data-placement="right" title="Click here to go to an interactive version of my resume" /></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <!-Contact-->
+    <div id="contact">
+        <div class="container-fluid">
+            <h4>Get in contact with me!</h4>
+            <div class="card-group">
+                <div class="card" style="background-color: transparent;text-align: center;">
+                    <h5 class="card-header">E-Mail</h5>
+                    <a href="mailto:stefonjohns2@gmail.com?bcc=stefonzie900@gmail.com&amp;subject=Website%20Contact">
+                        <img id="contactIMG" src="./img/email.png" style="width:300px;height:300px;margin-top: 30px;" />
+                    </a>
+                    <p>You can send me an email! This will open your computer's default email-service.</p>
+                </div>
+                <div class="card" style="background-color: transparent;text-align: center;">
+                    <h5 class="card-header">Social</h5>
+                    <a href="https://www.linkedin.com/in/stefon-johns/" target="_blank">
+                        <img id="contactIMG" src="img/linkedin.png" style="width:300px;height:300px;margin-top: 30px;" />
+                    </a>
+                </div>
+                <div class="card" style="background-color: transparent;">
+                    <h5 class="card-header">Dev</h5>
+                    <ol style="list-style: none;">
+                        <li>
+                            <a href="https://github.com/StefJohns" target="_blank">
+                                <img id="devIMG" src="./img/github.png" style="width:250px;height:250px;"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://stackexchange.com/users/11842770/stef-johns" target="_blank">
+                                <img id="devIMG" src="./img/stackOverflow.png" style="width:250px;height:250px;" />
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    
+    <!--Footer-->
+    <footer>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body" id="footerLinks">
+                    <a href="#home">Back To Top</a> |
+                    <a href="#about">About</a> |
+                    <a href="#resumePage">Experience</a> |
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="card">
+                <h6>FlatIcons Provided By:</h6>
+                <ol style="list-style: none;" class="col-md-6">
+                    <li>
+                        <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy" target="_blank">Dave Gandy</a>
+                    </li>
+                    <li>
+                    <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar" target="_blank">Gregor Cresnar</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/authors/alfredo-hernandez" title="Alfredo Hernandez">Alfredo Hernandez</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+    </footer>
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script><script src="js/src/uncompressed/TimelineMax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/JavaScript.js"></script>
 </body>
-
 </html>
