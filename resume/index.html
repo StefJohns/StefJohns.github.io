@@ -1,8 +1,162 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="veiwport" content="width=device-width, initial-scale=1">
+        <title>Stefon Johns Resume</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="../resume/css/style.css">
+        <link rel="stylesheet" href="../resume/css/animations.css">
+        <link rel="stylesheet" href="../resume/css/mediaBreaks.css">
+        <script>
+            window.sr = ScrollReveal();
+        </script>
     </head>
     <body>
-        <h1>SITE STILL UNDER CONSTRUCTION. PLEASE RETURN TO MAIN SITE <a href="https://stefjohns.github.io">HERE</a>.</h1>
+        <div class="container-fluid" id="pageHeader">
+                <h2 id="headerMain">Stefon Johns</h2>
+            <hr id="hr" />
+                <h6 id="subHeader">Full-Stack Software Engineer // Available for Hire</h6>
+            <div class="row" id="contactRow">
+                <div class="col col-sm-5 col-lg-5" id="c1">
+                    <p><a id="conA1" href="mailto:stefonjohns2@gmail.com"><img src="./img/mail.png" style="width:20px;height:20px;background-color:#fff;" />stefonjohns2@gmail.com</a></p>
+                </div>
+                <div class="col col-sm-5 col-lg-5" id="c2">
+                    <p><a id="conA2" href="tel: 19712026921"><img src="./img/phone.png" style="width:20px;height:20px;" />971-202-6921</a></p>
+                </div>
+                <div class="col col-sm-5 col-lg-5" id="c3">
+                    <p><a id="conA3" href="https://stefjohns.github.io" target="_blank"><img src="./img/web.png" style="width:20px;height:20px;background-color:#fff;" />https://stefjohns.github.io</a></p>
+                </div>
+                <div class="col col-sm-5 col-lg-5" id="c4">
+                    <p><a id="conA4" href="https://github.com/StefJohns" target="_blank"><img src="./img/github.png" style="width:20px;height:20px;" />github.com/StefJohns</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="pageContent">
+            <div class="row">
+                <div class="col-lg-6 col-sm-auto" id="rh1">
+                    <h3 id="tH1">Relevant Experience</h3>
+                    <div>
+                    <ol style="list-style: none;">
+                        <h4 id="jH1">Software Development</h4>
+                        <li id="jLI1">
+                        <h6><strong>ProsperIT Consulting</strong></h6>
+                            <p id="p0">August 2017 - October 2017
+                            <br />
+                                <ul id="p0UL" style="list-style: none;">
+                                    <li>Completed work on a Blog in which the goal was create CRUD methods for the blog as well as comments on individual blogs.</li>
+                                    <li>
+                                        Blog Features created:
+                                        <ul style="list-style:disc;">
+                                            <li>Create and implement a control and subsequent views in which the user could Create, Edit, View, and Delete Blogs in Database with a unique Guid per each blog. In addition, a customer(student) facing display of the created blogs got a beginning implementation. Not yet successfully deployed. </li>
+                                            <li>Create, View, Delete Comments in Database in which the Blog Primary Key is used to create comments. The comments would then be displayed using MVC Views as well as Razor V3 syntax to display the information.</li>
+                                            <li>Create a one-to-many relationship between a Blog and it's corresponding commments.</li>
+                                            <li>Enable creation of blogs with formatted iframe for videos and image tag utilizing HTML, Bootstrap 3, and jQuery.</li>
+                                            <li>Utilize existing technologies without addition of external frameworks or languages not present in (then) current project file.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p>
+                        </li>
+                        <hr />
+                        <h4 id="jH2">Customer Service</h4>
+                        <li id="jLI2">
+                            <h6><strong>Conduent</strong></h6>
+                            <p id="p1"><strong>Technical Support</strong> (Tigard, OR) Feb 2017 - May 2017</p>
+                            <p id="p1">Assist customers calling in about technical issues with their laptops, computers, cell phones, tablets and many other devices. Third party vendor for large tech company.</p>
+                            <p id="p1"><strong>Customer Retention Specialist</strong> (Portland, OR) May 2017 - Aug 2017</p>
+                            <p id="p1">Figure out what customers are dissatisfied with and attempt to rectify the issue before the customer decides to switch to another cell phone provider.</p>
+                        </li>
+                    <hr />
+                        <li id="jLI3">
+                            <h6><strong>WithMe Retail Holdings LLC</strong></h6>
+                            <p id="p2"><strong>Visual Assistant Manager</strong> Nov 2016 - Jan 2017</p>
+                            <p id="p2">A tech startup in Washington Square Mall, maintain upkeep and presentation of all company booths. Ensure that each brand vision is thoughtfully executed and implemented per booth. Assist Site Manager with employee management. Unfortunately, due to lack of funding, this tech startup closed.</p>
+                        </li>
+                    <hr />
+                        <li id="jLI4">
+                            <h6><strong>JBC Product Mgmt</strong></h6>
+                            <p id="p3"><strong>Customer Service Representative</strong> Sep 2016 - Nov 2016</p>
+                            <p id="p3">Inbound Call Center in which I assisted customers, drivers, and points of purchase in ensuring the timely, safe, and professional delivery of household appliances.</p>
+                        </li>
+                    </ol>
+                </div>
+                </div>
+                <div class="col-lg-6 col-sm-auto" id="rh2">
+                    <h3 id="tH2">Skills // Tools // Education</h3>
+                    <div class="row" id="s1">
+                        <h6>Languages and Frameworks</h6>
+                        <ul id="lfUL1">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>ASP.NET</li>
+                            <li>C#</li>
+                            <li>SQL/T-SQL</li>
+                            <li>Bootstrap</li>
+                            <li>jQuery</li>
+                            <li>KnockoutJS</li>
+                            <li>Entity Framework</li>
+                            <li>.NET Framework</li>
+                            <li>ADO.NET</li>
+                            <br/>
+                            <li><p><strong>In Progress:</strong></p><hr />ReactJS</li>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>Sass</li>
+                            <li>AWS</li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <div class="row" id="s2">
+                        <h6>Tools and Programs</h6>
+                        <ul id="lfUL2">
+                            <li>Visual Studio 2017</li>
+                            <li>MS SQL Server 2008+</li>
+                            <li>NotePad++</li>
+                            <li>Brackets</li>
+                            <li>Autodesk 3DS Max 2016</li>
+                            <li>SolidWorks 2008</li>
+                            <li>Koala Pre-Compiler</li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <div class="row" id="s3">
+                        <h6>Education</h6>
+                        <ul id="lfUL3">
+                            <li>
+                                <p id="edHead1"><strong>The Tech Academy</strong> Portland, OR Aug 2017 - October 2017</p>
+                                <p>
+                                    <strong>Graduate</strong>
+                                    Boot-Camp style career school for Software Development. With 40-hour week training.
+                                    Graduated 2 months before expected date of December 25, 2017. In this self-paced
+                                    environment I’ve learned the Fundamentals of Computer Science, HTML/CSS, JavaScript,
+                                    C#, ASP.NET, OOP, RDB and Management. Completed projects that are located on
+                                    GitHub, including work on a LMS Blog, both front-end and back-end.
+                                </p>
+                            </li>
+                            <hr />
+                            <li>
+                                <p id="edHead2"><strong>The Art Institute</strong> Portland, OR April 2016 - September 2016</p>
+                                <p><strong>Game Design and Business Management</strong>
+                                    Studying game design, I learned the principles of design and aesthetic as well as several 3-D
+                                    modeling software and an introduction into Web Development with HTML/CSS and
+                                    JavaScript. Business Management gave me an opportunity to work in groups with other
+                                    students to develop business plans and requirements, while learning about the industry.
+
+                                </p>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script type="text/javascript" src="./js/scrollScript.js"></script>
     </body>
 </html>
