@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/mediaBreakPoints.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Ubuntu+Condensed" rel="stylesheet">
     <script>
         window.sr = ScrollReveal();
@@ -48,45 +49,44 @@
     
     <!--Home-->
     <div id="home">
-        <div class="container-fluid">
+        <div id="homeContainer" class="container-fluid">
         <h1 id="homeHeader">Greetings!</h1>
         <h3 id="homeText">I'm Stefon Johns, a Full-Stack Software Engineer,<br /> who likes to design with the client and user in mind.</h3>
-        <button type="button" href="#about" id="homeButton" style="margin-left: 120px;">Proceed...</button>
+        <button type="button" href="#about" id="homeButton">Enter</button>
         </div>
     </div>
     
     <!--Body of Page-->
-    <div class="container-fluid" id="pageContent">
-        
+    <div class="container-fluid" id="pageContent">        
         <!--About-->
     <div id="about">
         <div id="aboutCont" class="container-fluid">
-            <div class="row">
-                <div class="col-md-6" style="font-size: 1.6em; border-right-style: dotted; border-right-color: white; border-right-width: 2px;">
-                    <h3 id="atWork">At Work</h3>
+            <div class="row clearfix">
+                <div  id="atWork" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <h3>At Work</h3>
                     <hr id="horRule" />
                     <p id="wp1">I am a graduate of <strong style="color: white;">The Tech Academy</strong> in Portland, Oregon specializing in Full-Stack software development. I have had the opportunity to internship here as well, which has allowed me to work on the school's blog.</p>
                     <p id="wp2">As a Software Engineer, I enjoy working on front-end and back-end development, and I would lke to eventually flow into Artificial Intelligence and Machine Learning. I specialize in <strong style="color: white;">Database C.R.U.D.</strong> methodology, <strong style="color: white;">User Interface and Design</strong>, and <strong style="color: white;">Client-Side</strong> scripting.</p>
                 </div>
-                <div class="col-md-6" style="text-align: left; color: red; font-size: 1.6em;">
-                    <h3 id="atHome">At Home</h3>
+                <div  id="atHome" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <h3>At Home</h3>
                     <hr id="horRule2" />
                     <p id="hp1">I am a <strong style="color: #ff0000;">HUGE</strong> gamer! My favorite game of all time would have to be <strong style="color: #019D0A;">The Legend of Zelda: Ocarina of Time Master Quest</strong>. I went to <strong style="color: #ff0000;">The Art Intstitute of Portland</strong> for Game Design, but found that I wanted to do more coding instead.</p>
                     <p id="hp2">I throughly enjoy hiking. My favorite place to hike up to is <strong style="color: #ff0000;">Weisendanger Falls</strong>, above Multnomah Falls, here in the Willamette Valley.</p>
                     <p id="hp3">As cliche as it may be, in my off time I actually enjoy coding. I love learning and being able to learn new languages and frameworks and tools is exciting.</p>
                 </div>
+            </div>
         </div>
-    </div>
     </div>
     
     <!--Resume-->
-    <div id="resumePage">
+    <div id="resumePage" class="clearfix">
         <div class="container-fluid" id="resumeCont">
             <div class="row">
                 <h3 style="color:#FF0000;">Skills</h3>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <h6 style="color:#FF0000;">Languages</h6>
                     <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;">
                         <li>HTML5</li>
@@ -97,7 +97,7 @@
                         <li>SQL</li>
                     </ol>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <h6 style="color:#FF0000;">Frameworks</h6>
                     <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;">
                         <li>jQuery</li>
@@ -108,7 +108,7 @@
                         <li>.NET Framework</li>
                     </ol>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <h6 style="color:#FF0000;">Tools and Programs</h6>
                     <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;">
                         <li>NotePad++</li>
@@ -128,7 +128,7 @@
                 <h3 style="color:#F0CF02;">Experience</h3>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <h6 style="color:#F0CF02;">Software and Web Development</h6>
                     <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;font-family: 'Ubuntu Condensed', sans-serif;">
                         <li><strong>ProsperIT Consulting</strong> | <br />Full Stack Software Developer Intern <br />Aug 2017 - Oct 2017</li>
@@ -139,7 +139,7 @@
                             GitHub, including work on a LMS Blog, both front-end and back-end</li>
                     </ol>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <h6 style="color:#F0CF02;">Customer Service</h6>
                     <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;font-family: 'Ubuntu Condensed', sans-serif;">
                         <li><strong>Conduent</strong> | <br/>Technical Support & Customer Retention <br/>Feb 2017 - Aug 2017</li>
@@ -149,7 +149,7 @@
                         <li></li>
                     </ol>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                     <h6 style="color:#F0CF02;">Resume</h6>
                     <div class="row">
                         <a href="resume/Stefon%20Johns%20Resume.doc.pdf" download="StefonJohns_Resume"><img src="img/resume.png" style="width:115px;height:115px;" data-toggle="tooltip" data-placement="right" title="Click here to download my resume!"/></a>
@@ -171,14 +171,13 @@
                 <div class="card" style="background-color: transparent;text-align: center;">
                     <h5 class="card-header">E-Mail</h5>
                     <a href="mailto:stefonjohns2@gmail.com?bcc=stefonzie900@gmail.com&amp;subject=Website%20Contact">
-                        <img id="contactIMG" src="./img/email.png" style="width:300px;height:300px;margin-top: 30px;" />
+                        <img id="contactIMG" src="./img/email.png" />
                     </a>
-                    <p>You can send me an email! This will open your computer's default email-service.</p>
                 </div>
                 <div class="card" style="background-color: transparent;text-align: center;">
                     <h5 class="card-header">Social</h5>
                     <a href="https://www.linkedin.com/in/stefon-johns/" target="_blank">
-                        <img id="contactIMG" src="img/linkedin.png" style="width:300px;height:300px;margin-top: 30px;" />
+                        <img id="contactIMG" src="img/linkedin.png" />
                     </a>
                 </div>
                 <div class="card" style="background-color: transparent;">
@@ -186,12 +185,12 @@
                     <ol style="list-style: none;">
                         <li>
                             <a href="https://github.com/StefJohns" target="_blank">
-                                <img id="devIMG" src="./img/github.png" style="width:250px;height:250px;"/>
+                                <img id="devIMG" src="./img/github.png"/>
                             </a>
                         </li>
                         <li>
                             <a href="https://stackexchange.com/users/11842770/stef-johns" target="_blank">
-                                <img id="devIMG" src="./img/stackOverflow.png" style="width:250px;height:250px;" />
+                                <img id="devIMG" src="./img/stackOverflow.png"/>
                             </a>
                         </li>
                     </ol>

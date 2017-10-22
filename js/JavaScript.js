@@ -12,7 +12,7 @@ $('#footerLinks').localScroll();
 $('#navbarLinks').localScroll();
 
 //ScrollReveal
-window.sr = ScrollReveal({reset: true});
+window.sr = ScrollReveal({reset: false});
 sr.reveal('#home', {duration: 4000});
 sr.reveal('#aboutCont', {duration: 3000}, 50);
 sr.reveal('#atWork', {duration: 2500}, 50);

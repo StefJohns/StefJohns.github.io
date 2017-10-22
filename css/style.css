@@ -1,5 +1,4 @@
 html{
-    font-size: auto;
     font-family: 'Comfortaa', cursive;
     font-family: 'Ubuntu Condensed', sans-serif;
 }
@@ -22,12 +21,12 @@ hr {
 /* Home section */
 #home {
     width: auto;
-    height: 666px;
+    height: auto;
     color: orange;
     border: none;
     margin-top: 56px;
 }
-#home .container-fluid {
+#homeContainer {
     padding-top: 300px;
     padding-bottom: 212px;
 }
@@ -37,6 +36,7 @@ hr {
     border: none;
     font-size: 3em;
     background-color: transparent;
+    margin-left: 120px;
 }
 #homeButton:hover {
     animation: glow1 2s ease-in-out infinite alternate;
@@ -75,6 +75,10 @@ hr {
 #atWork {
     font-family: 'Comfortaa', cursive;
     color: #fff;
+    font-size: 1.6em; 
+    border-right-style: dotted; 
+    border-right-color: white; 
+    border-right-width: 2px;
 }
 #wp1, #wp2 {
     font-family: 'Ubuntu Condensed', sans-serif;
@@ -83,6 +87,9 @@ hr {
 #atHome {
     font-family: 'Comfortaa', cursive;
     color: #ff0000;
+    text-align: left; 
+    color: red; 
+    font-size: 1.6em;
 }
 #hp1, #hp2, #hp3 {
     font-family: 'Ubuntu Condensed', sans-serif;
@@ -117,9 +124,11 @@ hr {
     padding-top: 56px;
     text-align: right;
 }
+#contactIMG{width:300px;height:300px;margin-top: 30px;}
 #contactIMG:hover {
     animation: bounce 1s ease-in-out infinite alternate;
 }
+#devIMG {width:250px;height:250px;}
 #devIMG:hover {
    animation: bounceLeft 1s ease-in-out infinite alternate; 
 }
