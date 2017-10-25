@@ -18,7 +18,7 @@ html {
 #aboutContainer {
     font-family: 'Raleway', sans-serif;
 }
-#myWorkHeader, #myWorkContainer1 h4 {
+#myWorkHeader, #myWorkContainer1 h4, #myWorkContainer2 h4 {
 	font-family: 'Lobster', cursive;
 }
 #contactForm h2 {

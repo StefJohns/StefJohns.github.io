@@ -6,21 +6,21 @@
     background-position:bottom;
 }
 #websiteOneLaptopIMG {
-	width: 40vw;
+	width: 35vw;
     z-index: 1;
     border: 10px solid #000;
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
 }
 #websiteOneIpadIMG {
-	width: 16vw;
+	width: 14vw;
     z-index: 2;
-    margin-left: -10vw;
+    margin-left: -50vh;
 }
 #websiteOneNexusIMG {
 	width: 9vw;
     z-index: 2;
-    margin-left: -50vw;
+    margin-left: -10vh;
 }
 #websiteTwoLaptopIMG {
 	width: 40vw;
