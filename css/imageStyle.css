@@ -1,0 +1,41 @@
+#homeContainer {	
+    background-image: url(../images/code.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:bottom;
+}
+#websiteOneLaptopIMG {
+	width: 40vw;
+    z-index: 1;
+    border: 10px solid #000;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+#websiteOneIpadIMG {
+	width: 16vw;
+    z-index: 2;
+    margin-left: -10vw;
+}
+#websiteOneNexusIMG {
+	width: 9vw;
+    z-index: 2;
+    margin-left: -50vw;
+}
+#websiteTwoLaptopIMG {
+	width: 40vw;
+    z-index: 1;
+    border: 10px solid #000;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+#websiteTwoIpadIMG {
+	width: 16vw;
+    z-index: 2;
+    margin-left: -20vw;
+}
+#websiteTwoNexusIMG {
+	width: 9vw;
+    z-index: 2;
+    margin-left: -5vw;
+}

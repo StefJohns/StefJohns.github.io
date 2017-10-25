@@ -1,0 +1,125 @@
+/* This CSS file only contains height, width, color/background-color, display */
+
+body {
+    display: flex;
+    min-height: 100vmax;
+    flex-direction:column;
+  }
+main {
+    flex: 1 0 auto;
+    background-color:transparent;
+    height: 100%;
+    display:inline;
+  }
+
+#homeContainer {
+	width: 100%;
+    height: 100vh;
+    padding-bottom: 0;
+    margin:0;
+}
+#homeContent {
+    color: #000;
+    height: 100%;
+    width: 100%;
+    padding-top: 30vh;
+    background-color: rgba(255,255,255,0.5);
+    background-size:auto;
+}
+.enterButton {
+    color: #000;
+}
+.input-field {
+    color:#000;
+}
+
+#aboutMain {
+    color: #000;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffebee, #ffcdd2, #ef9a9a, #e57373 , #ef5350, #f44336);
+    background: -webkit-linear-gradient(#ffebee, #ffcdd2, #ef9a9a, #e57373, #ef5350, #f44336);
+    background: -o-linear-gradient(#ffebee, #ffcdd2, #ef9a9a, #e57373  #ef5350, #f44336);
+    background: -moz-linear-gradient(#ffebee, #ffcdd2, #ef9a9a,  #ef5350, #f44336);
+    margin: 0;
+    float: left;
+}
+#aboutHeader {
+    width: 100%;
+}
+#aboutContainer {
+	color: #000;
+    width: 100%;
+    height: 100%;
+}
+#aboutContainer .card-panel {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    color:#b71c1c;
+}
+#aboutContainer .card-panel p, #aboutContainer .card-panel h4  {
+    color: #000;
+}
+#aboutMain .divider {
+    width: 60%;
+    background-color: #d50000;
+}
+
+#myWork {
+	color: #000;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: linear-gradient(#f44336,  #ef5350,#ef9a9a,#ffcdd2,#ffebee);
+    background: -webkit-linear-gradient(#f44336,  #ef5350,#ef9a9a,#ffcdd2,#ffebee);
+    background: -o-linear-gradient(#f44336,  #ef5350,#ef9a9a,#ffcdd2,#ffebee);
+    background: -moz-linear-gradient(#f44336,  #ef5350,#ef9a9a,#ffcdd2,#ffebee);
+    
+}
+#myWork .divider {
+    background-color: #ff0000;
+    
+}
+#wrkDescrip1 {
+    text-shadow: 2px 0  10px #000;
+}
+#wrkDescrip2 {
+	margin-top: 5vw;
+    text-shadow: 2px 0  10px #000;
+}
+#websiteOneLaptopIMG, 
+#websiteOneNexusIMG, 
+#websiteOneIpadIMG,
+#websiteTwoLaptopIMG, 
+#websiteTwoNexusIMG, 
+#websiteTwoIpadIMG {
+	box-shadow: 10px 10px 20px #000;
+}
+#websiteOneNexusIMG, 
+#websiteOneIpadIMG, 
+#websiteTwoNexusIMG, 
+#websiteTwoIpadIMG {
+    border-radius: 18px;
+}
+#contactForm h2, #contactForm p {
+    color:#fff;
+}
+#contactForm {	
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #000;
+}
+
+
+.page-footer {
+	background-color: rgba(0, 0, 0, 1);
+}
+.page-footer blockquote {
+    border-left:5px solid #fff;
+}
+.footer-copyright {
+	display: flex;
+}
