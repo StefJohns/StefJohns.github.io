@@ -1,0 +1,144 @@
+html{
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+body {
+    background-image: url(../img/redSpace.jpg);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+hr {
+    background-color: white;
+}
+#pageContent {
+    background: linear-gradient(#000, #260000, #420000);
+    background: -moz-linear-gradient(#000, #260000, #420000);
+    background: -webkit-linear-gradient(#000, #260000, #420000);
+    height: auto;
+    width: 100%;
+}
+
+/* Home section */
+#home {
+    width: auto;
+    height: auto;
+    color: orange;
+    border: none;
+    margin-top: 56px;
+}
+#homeContainer {
+    padding-top: 300px;
+    padding-bottom: 212px;
+}
+#homeButton {
+    color: white;
+    width: 40vmin;
+    border: none;
+    font-size: 3em;
+    background-color: transparent;
+    margin-left: 120px;
+}
+#homeButton:hover {
+    animation: glow1 2s ease-in-out infinite alternate;
+    -webkit-animation: glow1 2s ease-in-out infinite alternate;
+    -moz-animation: glow1 2s ease-in-out infinite alternate;
+}
+#homeHeader {
+    font-size: 3.5em;
+    font-family: 'Comfortaa', cursive;
+    color: #F4B604;
+}
+#homeText {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin-left: 110px;
+    color: #F4B604;
+}
+
+/*About section*/
+#about {
+    width: auto;
+    height: 100vmin;
+    color: #fff;
+    border: none;
+    margin-top: 56px;
+    text-align: right;
+}
+#aboutCont {
+    text-align: right;
+    margin-top: 56px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+#about .row {
+    margin-top: 30px;
+}
+#atWork {
+    font-family: 'Comfortaa', cursive;
+    color: #fff;
+    font-size: 1.6em; 
+    border-right-style: dotted; 
+    border-right-color: white; 
+    border-right-width: 2px;
+}
+#wp1, #wp2 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #F4B604;
+}
+#atHome {
+    font-family: 'Comfortaa', cursive;
+    color: #ff0000;
+    text-align: left; 
+    color: red; 
+    font-size: 1.6em;
+}
+#hp1, #hp2, #hp3 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #fff;
+}
+
+/*Resume section*/
+#resumePage {
+    width: auto;
+    height: 100vmin;
+    color: #fff;
+    border: none;
+    margin-top: 56px;
+}
+#resumeCont {
+    color: #fff;
+    height: 100vmin;
+    margin-top: 56px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.liReaveal {
+    color:red;
+}
+
+/*Contact section*/
+#contact {
+    width: auto;
+    height: 100vmin;
+    color: #fff;
+    border: none;
+    padding-top: 56px;
+    text-align: right;
+}
+#contactIMG{width:300px;height:300px;margin-top: 30px;}
+#contactIMG:hover {
+    animation: bounce 1s ease-in-out infinite alternate;
+}
+#devIMG {width:250px;height:250px;}
+#devIMG:hover {
+   animation: bounceLeft 1s ease-in-out infinite alternate; 
+}
+
+/*Footer*/
+footer  {
+    background-color: #000;
+    height: 100px;
+}
+footer .card {
+    background-color: #000;
+}
+

@@ -1,208 +1,240 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <title> Stefon Johns | Full Stack Developer and UI/UX Design</title>
-<!-- Required Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1">
-    <meta name="author" content="Stefon Johns">
-    <meta name="description" content="Freelance UI/UX Web Developer and Full Stack Software Developer">
-    <meta name="keywords" content="Web Developer,Freelance,UI/UX,Stefon Johns,Portland Oregon,Design,HTML,CSS,JavaScript,Bootstrap,Developer,FullStack,">
-    
-<!-- Google Materialize -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    
-<!-- Google Font Api -->
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway:300i" rel="stylesheet">
-    
-<!-- CSS Style Sheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/componentsStyle.css">
-    <link rel="stylesheet" href="css/imageStyle.css">
-    <link rel="stylesheet" href="css/textStyle.css">
-    <link rel="stylesheet" href="css/mediaBreaks.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/materialize-components.css">
-    
-    <script language="JavaScript" src="/js/gen_validatorv31.js" type="text/javascript"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <title>SJ: Developer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/mediaBreakPoints.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Ubuntu+Condensed" rel="stylesheet">
+    <script>
+        window.sr = ScrollReveal();
+    </script>
 </head>
 <body>
-    <main>
-        <div class="navbar-fixed center" id="nbFixed">
-            <nav>
-                <div class="nav-wrapper black">
-                    <a href="#" class="brand-logo"><h1 class="flow-text"><b>Stefon</b> Johns</h1></a>        
-                </div>
-            </nav>
+    <!--NavBar-->
+    <div id="navbarLinks" class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: #000;">
+        <a class="navbar-brand" href="#home"><img src="./img/businessman.png"/><strong>Stefon</strong> Johns</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#resumePage">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-danger dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://github.com/StefJohns/Portfolio/tree/master/LibraryDatabase" target="_blank">Library Database (MS SQL SERVER)</a>
+                        <a class="dropdown-item" href="https://github.com/StefJohns/Portfolio/blob/master/PhotoGallery/index.html" target="_blank">Photo Gallery (HTML/CSS)</a>
+                        <a class="dropdown-item" href="https://github.com/StefJohns/Tech-Academy-Projects/tree/master/Visual%20Studio%20Projects/PizzaSPAFinal" target="_blank">Build A Pizza S.P.A (ASP.NET MVC)</a>
+                        <a class="dropdown-item" href="#" target="_blank">Tech Academy LMS Blog</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="center" id="homeContainer">
-            <div id="homeContent">
-                <h1 class="flow-text">Hi, I'm Stefon, a Full Stack Software Developer.<br/>I build:<br /><b><span class="txt-rotate" data-period="500" data-rotate='["websites and applications.", "software applications.", "android apps.", "databases.", "magical experiences!"]'></span></b></h1>
-                <div class="row" id="entButCont">
-                    <a class="flow-text enterButton" href="#aboutMain"><i class="medium material-icons">details</i></a> 
-                </div> 
-            </div>                      
-        </div>
-        <section id="aboutMain">
-            <div class="header center" id="aboutHeader">
-                <h2>What do I do?</h2>
-            </div>
-            <div class="container row" id="aboutContainer">
-                <div class="col s12 m4 l4">
-                    <div class="card-panel">
-                        <div class="card-title">
-                            <i class="large material-icons">color_lens</i>
-                            <br />
-                            <h4 class="header"><b>UI/UX</b></h4>
-                        </div>
-                        <div class="divider container"></div>
-                        <div class="card-content">
-                            <p class="flow-text">From sketching out the design to building the basic frame, I utilize my artistic skills to bring: Creative experiences, custom theme and palette building, and handrawn art and icons.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 l4">
-                    <div class="card-panel">
-                        <div class="card-title">
-                            <i class="large material-icons">phonelink</i>
-                            <br />
-                            <h4 class="header"><b>Responsive Design</b></h4>
-                        </div>
-                        <div class="divider container"></div>
-                        <div class="card-content">
-                            <p class="flow-text">Utilizing CSS frameworks and media breakpoints, I create web sites and applications that look and respond appropriately across all devices. This includes cross-browser animation functionality.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 l4">
-                    <div class="card-panel">
-                        <div class="card-title">
-                            <i class="large material-icons">code</i>
-                            <br />
-                            <h4 class="header"><b>Code</b></h4>
-                        </div>
-                        <div class="divider container"></div>
-                        <div class="card-content">
-                            <p class="flow-text">Using Visual Studio 2017, I am able to create cross-platform applications. Using HTML5, CSS3, JavaScript and a few Frameworks, and I create websites.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div id="myWork">
-            <div class="header center" id="myWorkHeader">
-                <h2>My Work</h2>
-            <div class="container row" id="myWorkContainer1">
-                <h4>Website V1</h4>
-                <div class="container col s12 m9 l8" id="imgContainer">
-                    <img src="images/stefonjohns.com_(Laptop%20with%20HiDPI%20screen).png" id="websiteOneLaptopIMG" />
-                    <img src="images/stefonjohns.com_(iPad).png" id="websiteOneIpadIMG" />
-                    <img src="images/stefonjohns.com_(Nexus%206P).png" id="websiteOneNexusIMG" />
-                </div>
-                <div class="container col s12 m3 l4" id="wrkDescrip1">
-                    <p class="flow-text">
-                        This was my very first personal website build. I was looking into theming and what I really wanted  to do with my website. While this isn't my best work by any means, it's a great reminder of what I can accomplish as a developer.
-                    </p>
-                    <a href="http://stefonjohns.com" target="_blank" class="waves-effect waves-light btn black">Visit Site</a>
-                </div>
-            </div>
-            </div><div class="container row" id="myWorkContainer2">
-                <h4 class="right">A Purely CSS driven Photo Gallery</h4><br/>
-                <div class="container col s12 m3 l3" id="wrkDescrip2">
-                    <p class="flow-text">
-                        This website was built uitlizing only CSS3 and HTML5. Using ':hover' to create animations within the photo containers.
-                    </p>
-                    <a href="https://github.com/StefJohns/Portfolio/blob/master/PhotoGallery/index.html" target="_blank" class="waves-effect waves-light btn black"><img style="width: 20px;height:20px;filter: invert();" src="images/git_fork-512.png" />Fork on Github</a>
-                </div>
-                
-                <div class="container col s12 m9 l9" id="imgContainer2">
-                    <img src="images/_C__Users_Stefon%2520Johns_Documents_GitHub_Tech-Academy-Projects_Photo%2520Gallery_index.html(Laptop%20with%20HiDPI%20screen).png" id="websiteTwoLaptopIMG" />
-                    <img src="images/_C__Users_Stefon%2520Johns_Documents_GitHub_Tech-Academy-Projects_Photo%2520Gallery_index.html(iPad).png" id="websiteTwoIpadIMG" />
-                    <img src="images/_C__Users_Stefon%2520Johns_Documents_GitHub_Tech-Academy-Projects_Photo%2520Gallery_index.html(Nexus%206P).png" id="websiteTwoNexusIMG" />
-                </div>
-            </div>
-            
-            
-            
-        </div>
-        <section id="contactForm" class="center">
-            <h2>Get In Touch</h2>
-                <p class="flow-text">I am avaiable for hire! What would you like to work on together?</p>
-            <div class="container row center">
-                <form class=" contianer col s12" method="POST" action="https://formspree.io/stefonjohns2@gmail.com" enctype="multipart/form-data">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <input placeholder="First Name" id="first_name" type="text" class="validate" name="_firstame">
-                        </div>
-                        <div class="input-field col s6">
-                            <input placeholder="Last Name" id="last_name" type="text" class="validate" name="_lastname">
-                        </div>                        
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <input placeholder="Email" id="email" type="email" class="validate" name="_replyto">
-                        </div>
-                        <div class="input-field col s6">
-                            <input placeholder="Phone Number" id="phone_number" type="tel" class="validate" name="_phonenumber">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input placeholder="Website" id="website" type="url" class="validate" name="_website">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <input type="text" class="datepicker" placeholder="When you like to schedule a call?" name="_calldate">
-                        </div>
-                        <div class="input-field col s6">
-                            <input type="text" class="timepicker" placeholder="Is there a specific time?" name="_calltime">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea placeholder="What would you like to work on? Let me know what it is you are envisioning and how I can help! " id="bodyOfMessage" type="tel" class="materialize-textarea validate" data-length="250" name="message"></textarea>
-                        </div>
-                    </div>
-                    <div class="input-field col s12 center">
-                        <input type="submit" class="btn waves-effect waves-light red" type="submit">
-                    </div>
-                    <input type="hidden" name="_next" value="https://stefjohns.github.io" />
-                    <input type="hidden" name="_subject" value="New message!" />
-                    <input type="hidden" name="_cc" value="stefonzie900@gmail.com" />
-                </form>                
-            </div>
-        </section>
-    </main>
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 l6">
-                    <blockquote>"<i>Unlike a drop of water which loses its identity when it joins the ocean, man does not lose his being in the society in which he lives. Man's life is independent. He is born not for the development of the society alone, but for the development of his self.</i>"<br><strong>B. R. Ambedkar</strong></blockquote>
-                </div>
-                <div class="col s12 l6">
-                    <a></a>
-                    <a></a>
-                    <a></a>                    
-                </div>
-            </div>                
-        </div>
-            
-        <div class="footer-copyright">
-            <div class="container">
-                <i class="tiny material-icons">copyright</i> 2017 Stefon Johns
-            </div>
-        </div>
-    </footer>
+    </div>
     
-<!-- Scripts Section -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/typingCarousel.js"></script>
+    <!--Home-->
+    <div id="home">
+        <div id="homeContainer" class="container-fluid">
+        <h1 id="homeHeader">Greetings!</h1>
+        <h3 id="homeText">I'm Stefon Johns, a Full-Stack Software Engineer,<br /> who likes to design with the client and user in mind.</h3>
+        <button type="button" href="#about" id="homeButton">Enter</button>
+        </div>
+    </div>
+    
+    <!--Body of Page-->
+    <div class="container-fluid" id="pageContent">        
+        <!--About-->
+    <div id="about">
+        <div id="aboutCont" class="container-fluid">
+            <div class="row clearfix">
+                <div  id="atWork" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <h3>At Work</h3>
+                    <hr id="horRule" />
+                    <p id="wp1">I am a graduate of <strong style="color: white;">The Tech Academy</strong> in Portland, Oregon specializing in Full-Stack software development. I have had the opportunity to internship here as well, which has allowed me to work on the school's blog.</p>
+                    <p id="wp2">As a Software Engineer, I enjoy working on front-end and back-end development, and I would lke to eventually flow into Artificial Intelligence and Machine Learning. I specialize in <strong style="color: white;">Database C.R.U.D.</strong> methodology, <strong style="color: white;">User Interface and Design</strong>, and <strong style="color: white;">Client-Side</strong> scripting.</p>
+                </div>
+                <div  id="atHome" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <h3>At Home</h3>
+                    <hr id="horRule2" />
+                    <p id="hp1">I am a <strong style="color: #ff0000;">HUGE</strong> gamer! My favorite game of all time would have to be <strong style="color: #019D0A;">The Legend of Zelda: Ocarina of Time Master Quest</strong>. I went to <strong style="color: #ff0000;">The Art Intstitute of Portland</strong> for Game Design, but found that I wanted to do more coding instead.</p>
+                    <p id="hp2">I throughly enjoy hiking. My favorite place to hike up to is <strong style="color: #ff0000;">Weisendanger Falls</strong>, above Multnomah Falls, here in the Willamette Valley.</p>
+                    <p id="hp3">As cliche as it may be, in my off time I actually enjoy coding. I love learning and being able to learn new languages and frameworks and tools is exciting.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Resume-->
+    <div id="resumePage" class="clearfix">
+        <div class="container-fluid" id="resumeCont">
+            <div class="row">
+                <h3 style="color:#FF0000;">Skills</h3>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h6 style="color:#FF0000;">Languages</h6>
+                    <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript(ES6)</li>
+                        <li>C#</li>
+                        <li>ASP.NET</li>
+                        <li>SQL</li>
+                    </ol>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h6 style="color:#FF0000;">Frameworks</h6>
+                    <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;">
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                        <li>KnockoutJS</li>
+                        <li>ReactJS</li>
+                        <li>Entitity Framework</li>
+                        <li>.NET Framework</li>
+                    </ol>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h6 style="color:#FF0000;">Tools and Programs</h6>
+                    <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;">
+                        <li>NotePad++</li>
+                        <li>Brackets Editor</li>
+                        <li>MS SQL Server 2015</li>
+                        <li>Visual Studio</li>
+                        <li>GIMP</li>
+                        <li>AutoDesk 3DS Max</li>
+                        <li>SolidWorks 2008</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <hr />
+            
+            <div class="row">
+                <h3 style="color:#F0CF02;">Experience</h3>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h6 style="color:#F0CF02;">Software and Web Development</h6>
+                    <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;font-family: 'Ubuntu Condensed', sans-serif;">
+                        <li><strong>ProsperIT Consulting</strong> | <br />Full Stack Software Developer Intern <br />Aug 2017 - Oct 2017</li>
+                        <li style="font-size: 12px;">Boot-Camp style career school for Software Development with 40-hour week training.
+                            Graduated 2 months before expected date of December 25, 2017. In this self-paced
+                            environment I’ve learned the Fundamentals of Computer Science, HTML/CSS, JavaScript,
+                            C#, ASP.NET, OOP, RDB and Management. Completed projects that are located on
+                            GitHub, including work on a LMS Blog, both front-end and back-end</li>
+                    </ol>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h6 style="color:#F0CF02;">Customer Service</h6>
+                    <ol style="list-style: none;color: #fff;text-shadow: 2px 0px 50px #000;font-family: 'Ubuntu Condensed', sans-serif;">
+                        <li><strong>Conduent</strong> | <br/>Technical Support & Customer Retention <br/>Feb 2017 - Aug 2017</li>
+                        <li><strong>WithMe Retail Holdings LLC</strong> |<br/> Visual Assitant Manager <br/>Nov 2016 - Jan 2017</li>
+                        <li><strong>JBC Product Management</strong> | <br />Customer Service Representative <br />Sep 2016 - Nov 2016</li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h6 style="color:#F0CF02;">Resume</h6>
+                    <div class="row">
+                        <a href="resume/StefJohns__Resume.doc.pdf" download="StefonJohns_Resume"><img src="img/resume.png" style="width:115px;height:115px;" data-toggle="tooltip" data-placement="right" title="Click here to download my resume!"/></a>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <a href="./resume/index.html" target="_blank"><img src="./img/webResume.png" style="width:115px;height:115px; margin-left: 10px;" data-toggle="tooltip" data-placement="right" title="Click here to go to an interactive version of my resume" /></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <!-Contact-->
+    <div id="contact">
+        <div class="container-fluid">
+            <h4>Get in contact with me!</h4>
+            <div class="card-group">
+                <div class="card" style="background-color: transparent;text-align: center;">
+                    <h5 class="card-header">E-Mail</h5>
+                    <a href="mailto:stefonjohns2@gmail.com?bcc=stefonzie900@gmail.com&amp;subject=Website%20Contact">
+                        <img id="contactIMG" src="./img/email.png" />
+                    </a>
+                </div>
+                <div class="card" style="background-color: transparent;text-align: center;">
+                    <h5 class="card-header">Social</h5>
+                    <a href="https://www.linkedin.com/in/stefon-johns/" target="_blank">
+                        <img id="contactIMG" src="img/linkedin.png" />
+                    </a>
+                </div>
+                <div class="card" style="background-color: transparent;">
+                    <h5 class="card-header">Dev</h5>
+                    <ol style="list-style: none;">
+                        <li>
+                            <a href="https://github.com/StefJohns" target="_blank">
+                                <img id="devIMG" src="./img/github.png"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://stackexchange.com/users/11842770/stef-johns" target="_blank">
+                                <img id="devIMG" src="./img/stackOverflow.png"/>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    
+    <!--Footer-->
+    <footer>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body" id="footerLinks">
+                    <a href="#home">Back To Top</a> |
+                    <a href="#about">About</a> |
+                    <a href="#resumePage">Experience</a> |
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="card">
+                <h6>FlatIcons Provided By:</h6>
+                <ol style="list-style: none;" class="col-md-6">
+                    <li>
+                        <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy" target="_blank">Dave Gandy</a>
+                    </li>
+                    <li>
+                    <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar" target="_blank">Gregor Cresnar</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flaticon.com/authors/alfredo-hernandez" title="Alfredo Hernandez">Alfredo Hernandez</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+    </footer>
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script><script src="js/src/uncompressed/TimelineMax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/JavaScript.js"></script>
 </body>
 </html>
