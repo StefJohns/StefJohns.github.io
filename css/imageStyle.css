@@ -1,0 +1,7 @@
+#homeContainer {	
+    background-image: url(../images/code.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:bottom;
+}

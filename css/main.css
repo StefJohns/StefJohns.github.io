@@ -1,0 +1,8 @@
+main::before,
+main::after{
+    clear: both;
+    content: '';
+    display:block;
+}
+#aboutContainer .card-title:hover {
+	cursor: default;
