@@ -2,6 +2,7 @@
 
 body {
     display: flex;
+    display: -moz-inline-stack;
     min-height: 100vmax;
     flex-direction:column;
     width: 100vw;
